@@ -1,97 +1,128 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Barlow", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--color-beige);
+  background-color: #faf7f2;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --color-yellow: #fdc913;
+  --color-light-gray: #5f5f5f;
+  --color-dark-gray: #292929;
+  --color-red: #ce2829;
+  --color-beige: #faf7f2;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: 0;
   margin: 0;
+  padding: 0;
+}
+
+.flex-clas {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container {
+  /* width: 100%; */
+  gap: 3.2rem;
+}
+
+header {
+  width: 100%;
+  max-width: 1585px;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 400;
+  font-size: 2.7rem;
+  line-height: 2.7rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+h2.title-1 {
+  font-family: "Satisfy", cursive;
+  color: var(--color-yellow);
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  margin-bottom: -3px;
+  text-align: center;
 }
 
-.card {
-  padding: 2em;
+h2.title-2 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 4.6rem;
+  line-height: 4.9rem;
+  letter-spacing: 1.5px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.read-the-docs {
-  color: #888;
+.header-section {
+  width: 100%;
+  aspect-ratio: 15/9;
+  padding-top: 2rem;
+  gap: 2.5rem;
+  background: url("public/assets/iteration-1/home-banner.png") center/cover
+    no-repeat;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.header-textbox {
+  justify-content: center;
+  text-align: center;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.btn {
+  width: 180px;
+  color: black;
+  background-color: var(--color-yellow);
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  border-radius: 1.6rem;
+  margin-top: 1.5rem;
 }
+
+.header-navbar {
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+
+.header-navlist {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  gap: 2.4rem;
+}
+
+.header-navlist li a {
+  display: flex;
+  padding: 0.5rem;
+  line-height: 2rem;
+  gap: 12px;
+  color: black;
+}
+
+.header-icon {
+  width: 2rem;
+}
+
+/* ----------------header kısmı bitiş------------------- */
