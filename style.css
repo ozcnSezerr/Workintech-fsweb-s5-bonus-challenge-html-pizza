@@ -126,3 +126,127 @@ h2.title-2 {
 }
 
 /* ----------------header kısmı bitiş------------------- */
+/* ----------------slider section başlangıç------------------- */
+.slider-section {
+  display: flex;
+  gap: 0.6rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.left-box,
+.top-right,
+.bottom-right {
+  position: relative;
+}
+.left-box {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 10px;
+  aspect-ratio: 265 / 224;
+}
+
+.overlay .overlay-btn {
+  box-sizing: border-box;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Barlow", sans-serif;
+  color: #ce2829;
+  background-color: white;
+  line-height: 32px;
+  width: 112px;
+  padding: 4px;
+  border-radius: 20px;
+}
+.special-one-h3 {
+  font-family: "Quattrocento", serif;
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 3.6rem;
+}
+.special-one-h3 + p {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.overlay {
+  font-weight: 600;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  gap: 16px;
+  top: 10%;
+  left: 5%;
+}
+
+.right-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.top-right,
+.bottom-right {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.left-box img,
+.top-right img,
+.bottom-right img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+/* ------------ grid experimental ---------- */
+/* .slider-cards {
+  display: grid;
+  grid-template-columns: 450px 450px;
+  gap: 1rem;
+}
+.slider-card img {
+  width: 100%;
+}
+.slider-card {
+  position: relative;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.overlay {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+.overlay-btn {
+  background-color: rgb(255, 255, 255);
+  height: 2rem;
+  padding: 8px;
+  border-radius: 1rem;
+}
+
+.overlay-btn:hover {
+  background-color: rgb(227, 227, 227);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card1 {
+  grid-row: 1 / span 2;
+} */
+
+/* ----------------slider kısmı bitiş------------------- */
