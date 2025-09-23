@@ -250,3 +250,53 @@ h2.title-2 {
 } */
 
 /* ----------------slider kısmı bitiş------------------- */
+/* ----------------menü kısmı baslangıç------------------- */
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+.menu-section > h3:first-child {
+  font-family: "Satisfy", cursive;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: #ce2829;
+}
+
+.menu-section > h3:nth-child(2) {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 2.7rem;
+  color: black;
+}
+.menu-navbar {
+  background-color: transparent;
+}
+.menu-list {
+  box-shadow: none;
+  gap: 20px;
+}
+.menu-navbar .menu-list li {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 36px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.menu-navbar .menu-list li:hover {
+  background-color: rgb(227, 227, 227);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.menu-navbar .menu-list li.active {
+  background-color: #292929;
+  box-shadow: 2px 2px 6px rgb(113, 113, 113);
+}
+.menu-navbar .menu-list li.active a {
+  color: white;
+}
+/* ----------------menu kısmı bitiş------------------- */
