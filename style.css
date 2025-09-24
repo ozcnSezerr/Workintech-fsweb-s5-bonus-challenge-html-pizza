@@ -1,7 +1,7 @@
 :root {
   font-family: "Barlow", sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 600;
 
   color: var(--color-beige);
   background-color: #faf7f2;
@@ -350,3 +350,86 @@ h2.title-2 {
   transform: translateX(100%);
 }
 /* ----------- card section bitiş------------- */
+
+/*------------- footer section baslangıc------------ */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 4.8rem;
+  row-gap: 2rem;
+  column-gap: 4rem;
+  width: 100%;
+  max-width: 1585px;
+  min-height: 500px;
+  background-color: var(--color-dark-gray);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-logo {
+  width: 160px;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-weight: 400;
+}
+
+.footer-icon:first-child {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-icon img {
+  width: 24px;
+  margin-right: 6px;
+}
+
+.footer-content:first-child {
+  transform: translateY(-20%);
+}
+
+.footer-content:nth-child(2) {
+  flex-basis: 220px;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.footer-list li {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.footer-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.9rem;
+  border-radius: 2px;
+}
+
+.footer-line {
+  width: 100%;
+  border-top: 1px solid var(--color-light-gray);
+}
+
+.copy-right {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: -2.6rem;
+}
+
+/* ----------- footer kısmı bitiş ------------- */
