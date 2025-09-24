@@ -300,3 +300,53 @@ h2.title-2 {
   color: white;
 }
 /* ----------------menu kısmı bitiş------------------- */
+
+/* ----------------card kısmı başlangıç------------------- */
+.cards-section p,
+.cards-section span {
+  color: #292929;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 290px;
+  padding: 1.5rem;
+  background-color: white;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cards img {
+  width: 100%;
+  height: auto;
+}
+.cards-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: start;
+  margin-top: -2rem;
+  gap: 2rem;
+}
+.card-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-info > span {
+  color: var(--color-light-gray);
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+  align-self: flex-start;
+}
+.card-info > span:last-child {
+  font-size: 1rem;
+  align-self: flex-end;
+  color: var(--color-dark-gray);
+}
+
+.card-info > span:nth-child(2) {
+  transform: translateX(100%);
+}
+/* ----------- card section bitiş------------- */
